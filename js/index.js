@@ -66,6 +66,39 @@ const allRecipes = [{
         "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles UPDATED", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
     },
     ]
+}, {
+    "item": "Special Offers3",
+    "data": [{
+        "id": "Special1",
+        "link": "https://source.unsplash.com/400x305/?Soup",
+        "itemTitle": "Soup UPDATED AGAIN",
+        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!",
+        "price": "BHD 2.992"
+    },
+    {
+        "id": "Special2",
+        "link": "https://source.unsplash.com/400x305/?Sandwich",
+        "itemTitle": "Sandwich UPDATED AGAIN",
+        "cardText": "Savor the deliciousness of our sandwiches at our restaurant. Made with fresh ingredients and a variety of mouthwatering fillings, our sandwiches are a perfect choice for a satisfying and convenient meal.Try one today!",
+        "price": "BHD 2.992"
+    },
+    {
+        "id": "Special3",
+        "link": "https://source.unsplash.com/400x305/?Coffee",
+        "itemTitle": "Coffee UPDATED AGAIN",
+        "cardText": " Awaken your senses with the rich aroma and bold flavors of our coffee at our restaurant.Sourced from the finest beans and expertly brewed, our coffee is the perfect pick- me - up for any time of the day.Treat yourself to a delightful cup today!",
+        "price": "BHD 1.02"
+    },
+    {
+        "id": "Special4",
+        "link": "https://source.unsplash.com/400x305/?Pasta",
+        "itemTitle": "Pasta UPDATED AGAIN",
+        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
+    }, {
+        "id": "Special5",
+        "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles UPDATED AGAIN", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
+    },
+    ]
 }]
 
 
@@ -90,7 +123,7 @@ const showDataToPage = () => {
     let tempElement = ""
 
     for (let index = 0; index < allRecipes.length; index++) {
-        element = `<h4 class="mt-4">${allRecipes[index].item}</h4>
+        element = `<h4 id="${allRecipes[index].item}" class="mt-4">${allRecipes[index].item}</h4>
         <br />
         `
         // debugger
