@@ -1,0 +1,42 @@
+[{ "item": "Special Offers", "data": [{
+    "link":"https://source.unsplash.com/400x305/?Soup",
+    "itemTitle":"Soup",
+    "cardText":"Experience the comforting and flavorful soups at our restaurant. From hearty
+    classics to innovative creations, our soups are crafted with care using the finest
+    ingredients. Indulge in a warm and satisfying bowl today!",
+    "price":"BHD 2.992"
+},
+{
+    "link":"https://source.unsplash.com/400x305/?Sandwich",
+    "itemTitle":"Sandwich",
+    "cardText":"Savor the deliciousness of our sandwiches at our restaurant. Made with fresh
+    ingredients and a variety of mouthwatering fillings, our sandwiches are a perfect
+    choice for a satisfying and convenient meal. Try one today!",
+    "price":"BHD 2.992"
+},
+{
+    "link":"https://source.unsplash.com/400x305/?Coffee",
+    "itemTitle":"Coffee",
+    "cardText":" Awaken your senses with the rich aroma and bold flavors of our coffee at our
+    restaurant. Sourced from the finest beans and expertly brewed, our coffee is the
+    perfect pick-me-up for any time of the day. Treat yourself to a delightful cup
+    today!",
+    "price":"BHD 1.02"
+},
+{
+    "link":"https://source.unsplash.com/400x305/?Soup",
+    "itemTitle":"Soup",
+    "cardText":"Experience the comforting and flavorful soups at our restaurant. From hearty
+    classics to innovative creations, our soups are crafted with care using the finest
+    ingredients. Indulge in a warm and satisfying bowl today!",
+    "price":"BHD 2.992"
+},
+{
+    "link":"https://source.unsplash.com/400x305/?Soup",
+    "itemTitle":"Soup",
+    "cardText":"Experience the comforting and flavorful soups at our restaurant. From hearty
+    classics to innovative creations, our soups are crafted with care using the finest
+    ingredients. Indulge in a warm and satisfying bowl today!",
+    "price":"BHD 2.992"
+}
+] }]
