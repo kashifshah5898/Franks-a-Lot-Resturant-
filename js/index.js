@@ -142,13 +142,13 @@ const showDataToPage = () => {
     let tempElement = ""
 
     for (let index = 0; index < allRecipes.length; index++) {
-        element = `<h4 id="${allRecipes[index].item}" class="mt-4">${allRecipes[index].item}</h4>
+        element = `<h4 id="${allRecipes[index].item}" class="mt-4 text-white">${allRecipes[index].item}</h4>
         <br />
         `
         // debugger
         for (let innerArray = 0; innerArray < allRecipes[index].data.length; innerArray++) {
             tempElement = `
-            <div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2 ">
+            <div class="card cardWidth col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2 ">
                 <img
                     class="card-img-top "
                     src="${allRecipes[index].data[innerArray].link}"

@@ -3,6 +3,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+.allBody {
+  background-color: #5c1104;
+}
+
 .text-white {
   color: white;
 }
@@ -103,6 +107,10 @@
 .card {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(255, 0, 0, 0.6),
     0 6px 12px rgba(0, 255, 0, 0.6), 0 8px 16px rgba(0, 0, 255, 0.6);
+}
+.cardWidth {
+  width: 25rem !important;
+  margin-left: 1%;
 }
 
 @keyframes slide-in {
