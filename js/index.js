@@ -63,7 +63,7 @@ const allRecipes = [{
         "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
     }, {
         "id": "Special5",
-        "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle:": "Noodles UPDATED", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
+        "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles UPDATED", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
     },
     ]
 }]
@@ -120,11 +120,12 @@ const showDataToPage = () => {
         }
 
         updatedHtmlData += element + element1
+        element1 = ""
 
 
     }
-    // const hr = `< class="mt-2 mb-4" hr />`
-    const hr = ""
+    const hr = `<hr />`
+
     showingData.innerHTML = updatedHtmlData + hr
 
 }
