@@ -64,3 +64,7 @@
 #paragraph_in_jumbotron {
   text-align: justify !important;
 }
+
+.mt2em {
+  margin-top: 2em !important;
+}

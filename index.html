@@ -151,17 +151,19 @@
 
     <nav class="navbar navbar-light bg-light justify-content-between">
       <div class="container">
-        <a class="navbar-brand" href="#Special Offers">Special Offers</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
-        <a class="navbar-brand">Navbar</a>
+        <a class="navbar-brand" href="#Special Offers">SPECIAL OFFERS</a>
+        <a class="navbar-brand" href="#APPETIZERS">APPETIZERS</a>
+        <a class="navbar-brand" href="#SOUPS">SOUPS</a>
+        <a class="navbar-brand" href="#SALADS">SALADS</a>
+        <a class="navbar-brand" href="#STEAK BURRITO">STEAK BURRITO</a>
         <div class="form-inline">
           <input
             class="form-control mr-sm-2"
             type="search"
-            placeholder="Search"
+            placeholder="Enter exact name"
             aria-label="Search"
+            id="searchId"
+            onkeyup="search()"
           />
         </div>
       </div>

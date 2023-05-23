@@ -1,105 +1,119 @@
 const itemInCart = localStorage.getItem("itemInCart")
 
-const allRecipes = [{
-    "item": "Special Offers",
-    "data": [{
-        "id": "Special1",
-        "link": "https://source.unsplash.com/400x305/?Soup",
-        "itemTitle": "Soup",
-        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!",
-        "price": "BHD 2.992"
-    },
+const allRecipes = [
     {
-        "id": "Special2",
-        "link": "https://source.unsplash.com/400x305/?Sandwich",
-        "itemTitle": "Sandwich",
-        "cardText": "Savor the deliciousness of our sandwiches at our restaurant. Made with fresh ingredients and a variety of mouthwatering fillings, our sandwiches are a perfect choice for a satisfying and convenient meal.Try one today!",
-        "price": "BHD 2.992"
-    },
-    {
-        "id": "Special3",
-        "link": "https://source.unsplash.com/400x305/?Coffee",
-        "itemTitle": "Coffee",
-        "cardText": " Awaken your senses with the rich aroma and bold flavors of our coffee at our restaurant.Sourced from the finest beans and expertly brewed, our coffee is the perfect pick- me - up for any time of the day.Treat yourself to a delightful cup today!",
-        "price": "BHD 1.02"
-    },
-    {
-        "id": "Special4",
-        "link": "https://source.unsplash.com/400x305/?Pasta",
-        "itemTitle": "Pasta",
-        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
+        "item": "Special Offers",
+        "data": [{
+            "id": "Special1",
+            "link": "https://source.unsplash.com/400x305/?Soup",
+            "itemTitle": "Soup",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        },
+        {
+            "id": "Special2",
+            "link": "https://source.unsplash.com/400x305/?Sandwich",
+            "itemTitle": "Sandwich",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        },
+        {
+            "id": "Special3",
+            "link": "https://source.unsplash.com/400x305/?Coffee",
+            "itemTitle": "Coffee",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 1.02"
+        },
+        {
+            "id": "Special4",
+            "link": "https://source.unsplash.com/400x305/?Pasta",
+            "itemTitle": "Pasta",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", "price": "BHD 2.992"
+        }, {
+            "id": "Special5",
+            "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles", "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", "price": "BHD 2.992"
+        },
+        ]
     }, {
-        "id": "Special5",
-        "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
-    },
-    ]
-}, {
-    "item": "Special Offers2",
-    "data": [{
-        "id": "Special1",
-        "link": "https://source.unsplash.com/400x305/?Soup",
-        "itemTitle": "Soup UPDATED",
-        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!",
-        "price": "BHD 2.992"
-    },
-    {
-        "id": "Special2",
-        "link": "https://source.unsplash.com/400x305/?Sandwich",
-        "itemTitle": "Sandwich UPDATED",
-        "cardText": "Savor the deliciousness of our sandwiches at our restaurant. Made with fresh ingredients and a variety of mouthwatering fillings, our sandwiches are a perfect choice for a satisfying and convenient meal.Try one today!",
-        "price": "BHD 2.992"
-    },
-    {
-        "id": "Special3",
-        "link": "https://source.unsplash.com/400x305/?Coffee",
-        "itemTitle": "Coffee UPDATED",
-        "cardText": " Awaken your senses with the rich aroma and bold flavors of our coffee at our restaurant.Sourced from the finest beans and expertly brewed, our coffee is the perfect pick- me - up for any time of the day.Treat yourself to a delightful cup today!",
-        "price": "BHD 1.02"
-    },
-    {
-        "id": "Special4",
-        "link": "https://source.unsplash.com/400x305/?Pasta",
-        "itemTitle": "Pasta UPDATED",
-        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
+        "item": "APPETIZERS",
+        "data": [{
+            "id": "APPETIZERS1",
+            "link": "https://source.unsplash.com/400x305/?Platter",
+            "itemTitle": "Franks Fiest Platter",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        },
+        {
+            "id": "APPETIZERS2",
+            "link": "https://source.unsplash.com/400x305/?Chips",
+            "itemTitle": "Corn Tortilla Chips With Salsa",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        },
+        {
+            "id": "APPETIZERS3",
+            "link": "https://source.unsplash.com/400x305/?Cheese",
+            "itemTitle": "Cheese fries",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 1.02"
+        },
+        {
+            "id": "APPETIZERS4",
+            "link": "https://source.unsplash.com/400x305/?Chicken",
+            "itemTitle": "Chicken Fingers",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", "price": "BHD 2.992"
+        }, {
+            "id": "APPETIZERS5",
+            "link": "https://source.unsplash.com/400x305/?Bbq",
+            "itemTitle": "BBQ",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.", "price": "BHD 2.992"
+        },
+        ]
     }, {
-        "id": "Special5",
-        "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles UPDATED", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
-    },
-    ]
-}, {
-    "item": "Special Offers3",
-    "data": [{
-        "id": "Special1",
-        "link": "https://source.unsplash.com/400x305/?Soup",
-        "itemTitle": "Soup UPDATED AGAIN",
-        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!",
-        "price": "BHD 2.992"
-    },
-    {
-        "id": "Special2",
-        "link": "https://source.unsplash.com/400x305/?Sandwich",
-        "itemTitle": "Sandwich UPDATED AGAIN",
-        "cardText": "Savor the deliciousness of our sandwiches at our restaurant. Made with fresh ingredients and a variety of mouthwatering fillings, our sandwiches are a perfect choice for a satisfying and convenient meal.Try one today!",
-        "price": "BHD 2.992"
-    },
-    {
-        "id": "Special3",
-        "link": "https://source.unsplash.com/400x305/?Coffee",
-        "itemTitle": "Coffee UPDATED AGAIN",
-        "cardText": " Awaken your senses with the rich aroma and bold flavors of our coffee at our restaurant.Sourced from the finest beans and expertly brewed, our coffee is the perfect pick- me - up for any time of the day.Treat yourself to a delightful cup today!",
-        "price": "BHD 1.02"
-    },
-    {
-        "id": "Special4",
-        "link": "https://source.unsplash.com/400x305/?Pasta",
-        "itemTitle": "Pasta UPDATED AGAIN",
-        "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
+        "item": "SOUPS",
+        "data": [{
+            "id": "SOUPS1",
+            "link": "https://source.unsplash.com/400x305/?Soup",
+            "itemTitle": "Creamy Mushroom Soup",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        },
+        {
+            "id": "SOUPS2",
+            "link": "https://source.unsplash.com/400x305/?Sandwich",
+            "itemTitle": "Enchilada Soup",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        }
+        ]
     }, {
-        "id": "Special5",
-        "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles UPDATED AGAIN", "cardText": "Experience the comforting and flavorful soups at our restaurant. From hearty classics to innovative creations, our soups are crafted with care using the finest ingredients.Indulge in a warm and satisfying bowl today!", "price": "BHD 2.992"
-    },
-    ]
-}]
+        "item": "SALADS",
+        "data": [{
+            "id": "SALADS1",
+            "link": "https://source.unsplash.com/400x305/?Salad",
+            "itemTitle": "Taco Salads",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        },
+        {
+            "id": "SALADS2",
+            "link": "https://source.unsplash.com/400x305/?Avocado",
+            "itemTitle": "Shrimp & Avacado Salad",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        }
+        ]
+    }, {
+        "item": "STEAK BURRITO",
+        "data": [{
+            "id": "STEAK1",
+            "link": "https://source.unsplash.com/400x305/?Steak",
+            "itemTitle": "Steak Burrito",
+            "cardText": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "price": "BHD 2.992"
+        }
+        ]
+    }]
 
 
 const countItems = () => {
@@ -152,14 +166,52 @@ const showDataToPage = () => {
 
         }
 
-        updatedHtmlData += element + element1
+        updatedHtmlData += element + element1 + `<hr class="mt2em" />`
         element1 = ""
 
 
     }
-    const hr = `<hr />`
 
-    showingData.innerHTML = updatedHtmlData + hr
+    showingData.innerHTML = updatedHtmlData
+
+}
+
+const search = () => {
+    let insertedValue = document.getElementById('searchId').value;
+    let showingData = document.getElementById("specificClass");
+    let data = allRecipes
+
+    if (insertedValue) {
+        insertedValue = insertedValue.toLowerCase();
+        for (let item of data) {
+            for (let itemData of item.data) {
+                if (itemData.itemTitle.toLowerCase() === insertedValue) {
+                    return showingData.innerHTML = `
+                    <div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2">
+                        <img
+                            class="card-img-top"
+                            src="${itemData.link}"
+                            alt="image not found"
+                        />
+                        <div class="card-body">
+                            <h5 class="card-title">${itemData.itemTitle}</h5>
+                            <p class="card-text">
+                            ${itemData.cardText}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">${itemData.price}</small>
+                        </div>
+                    </div>
+                    `;
+                }
+            }
+        }
+        return showingData.innerHTML = "No Item Found"; // Item not found
+
+    } else {
+        showDataToPage()
+    }
 
 }
 
