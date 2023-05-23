@@ -3,9 +3,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.allBody {
-}
-
 .text-white {
   color: white;
 }
@@ -59,6 +56,9 @@
   .onlyOnMobile {
     margin-top: 20%;
   }
+  .hideDisplayOnMobile {
+    display: none !important;
+  }
 }
 
 #paragraph_in_jumbotron {
@@ -87,7 +87,38 @@
     0 6px 12px rgba(0, 255, 0, 0.6), 0 8px 16px rgba(0, 0, 255, 0.6);
 }
 
+.addToCarTBtn:hover {
+  font-size: 18px;
+  border-radius: 10px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 24, 0.9220938375350141) 0%,
+    rgba(9, 85, 125, 1) 9%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
 .card {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(255, 0, 0, 0.6),
     0 6px 12px rgba(0, 255, 0, 0.6), 0 8px 16px rgba(0, 0, 255, 0.6);
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.textShadowEffect {
+  animation: slide-in 10s ease;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
 }

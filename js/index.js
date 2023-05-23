@@ -148,9 +148,9 @@ const showDataToPage = () => {
         // debugger
         for (let innerArray = 0; innerArray < allRecipes[index].data.length; innerArray++) {
             tempElement = `
-            <div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2">
+            <div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2 ">
                 <img
-                    class="card-img-top"
+                    class="card-img-top "
                     src="${allRecipes[index].data[innerArray].link}"
                     alt="image not found"
                 />
@@ -195,7 +195,7 @@ const search = () => {
                     return showingData.innerHTML = `
     <div div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2" >
                         <img
-                            class="card-img-top"
+                            class="card-img-top "
                             src="${itemData.link}"
                             alt="image not found"
                         />
