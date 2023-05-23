@@ -1,4 +1,6 @@
-const itemInCart = localStorage.getItem("itemInCart")
+const getItemsInCart = () => {
+    return localStorage.getItem("itemInCart")
+}
 
 const allRecipes = [
     {
@@ -117,12 +119,15 @@ const allRecipes = [
 
 
 const countItems = () => {
+    let itemInCart = getItemsInCart()
     if (itemInCart) {
-        const itemLength = itemInCart.split(',').length || 0
+        const itemLength = itemInCart.split(',').length
         var itemCountElement = document.getElementById("itemCount");
-        itemCountElement.textContent = itemLength;
+        itemCountElement.textContent = itemLength - 1;
     } else {
-        localStorage.setItem("itemInCart", [])
+        localStorage.setItem("itemInCart", '[]')
+        var itemCountElement = document.getElementById("itemCount");
+        itemCountElement.textContent = 0;
     }
 }
 
@@ -155,11 +160,12 @@ const showDataToPage = () => {
                     ${allRecipes[index].data[innerArray].cardText}
                     </p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer cardFooter">
                     <small class="text-muted">${allRecipes[index].data[innerArray].price}</small>
-                </div>
-            </div>
-            `
+                    <button class="addToCarTBtn" onclick="addToCart('${allRecipes[index].data[innerArray].id}')" >Add To Cart</button>
+                </div >
+            </div >
+    `
 
             element1 += tempElement;
             tempElement = ""
@@ -187,7 +193,7 @@ const search = () => {
             for (let itemData of item.data) {
                 if (itemData.itemTitle.toLowerCase() === insertedValue) {
                     return showingData.innerHTML = `
-                    <div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2">
+    <div div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2" >
                         <img
                             class="card-img-top"
                             src="${itemData.link}"
@@ -199,11 +205,12 @@ const search = () => {
                             ${itemData.cardText}
                             </p>
                         </div>
-                        <div class="card-footer">
+                        <div class="card-footer cardFooter">
                             <small class="text-muted">${itemData.price}</small>
+                            <button class="addToCarTBtn"  onclick="addToCart('${itemData.id}')" >Add To Cart</button>
                         </div>
-                    </div>
-                    `;
+                    </div >
+    `;
                 }
             }
         }
@@ -213,6 +220,16 @@ const search = () => {
         showDataToPage()
     }
 
+}
+
+const addToCart = (id) => {
+    let tempArr = getItemsInCart()
+    tempArr = tempArr && JSON.parse(tempArr)
+    tempArr.push(id);
+    var itemCountElement = document.getElementById("itemCount");
+    itemCountElement.textContent = tempArr.length;
+    localStorage.setItem("itemInCart", JSON.stringify(tempArr))
+    alert("Item is successfully added to cart")
 }
 
 
