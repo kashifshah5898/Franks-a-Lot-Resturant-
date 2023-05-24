@@ -1,3 +1,5 @@
+let currentUrl = window.location.href.split('/')
+currentUrl = currentUrl[currentUrl.length - 1]
 const getItemsInCart = () => {
     return localStorage.getItem("itemInCart")
 }
@@ -214,7 +216,7 @@ const search = () => {
                 }
             }
         }
-        return showingData.innerHTML = "No Item Found"; // Item not found
+        return showingData.innerHTML = `<h1 class="text-white center">No Item Found </h1>`; // Item not found
 
     } else {
         showDataToPage()
@@ -232,6 +234,71 @@ const addToCart = (id) => {
     alert("Item is successfully added to cart")
 }
 
+const showItemsInCart = () => {
+    let showingData = document.getElementById("cartItemsClass");
+    showingData.innerHTML = "";
+    let updatedHtmlData = ""
 
-showDataToPage()
+
+    let element = ""
+    let element1 = ""
+    let tempElement = ""
+
+
+    let itemFromCart = getItemsInCart()
+
+    itemFromCart = JSON.parse(itemFromCart);
+
+    for (let item = 0; item < allRecipes.length; item++) {
+        for (let innerArray = 0; innerArray < allRecipes[item].data.length; innerArray++) {
+            if (itemFromCart.includes(allRecipes[item].data[innerArray].id)) {
+                tempElement = `
+                        <div class="card cardWidth col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2 ">
+                            <img
+                                class="card-img-top "
+                                src="${allRecipes[item].data[innerArray].link}"
+                                alt="image not found"
+                            />
+                            <div class="card-body">
+                                <h5 class="card-title">${allRecipes[item].data[innerArray].itemTitle}</h5>
+                                <p class="card-text">
+                                ${allRecipes[item].data[innerArray].cardText}
+                                </p>
+                            </div>
+                            <div class="card-footer cardFooter">
+                                <small class="text-muted">${allRecipes[item].data[innerArray].price}</small>
+                                <small class="text-muted">${countOccurrences(itemFromCart, allRecipes[item].data[innerArray].id)} items</small>
+                            </div >
+                        </div >
+                `
+
+                element1 += tempElement;
+                tempElement = ""
+            }
+
+        }
+        updatedHtmlData += element + element1;
+        element1 = ""
+
+    }
+
+    showingData.innerHTML = updatedHtmlData ? updatedHtmlData : `<h1 class="text-white center">No Item Found </h1>`
+}
+
+function countOccurrences(arr, item) {
+
+    return arr.reduce(function (count, element) {
+        if (element === item) {
+            return count + 1;
+        }
+        return count;
+    }, 0);
+}
+
 countItems();
+
+if (currentUrl === 'cart.html') {
+    showItemsInCart()
+} else if (currentUrl === '' || currentUrl === 'menu.html') {
+    showDataToPage()
+}
