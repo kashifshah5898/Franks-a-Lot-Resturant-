@@ -1,36 +1,135 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>About Us</title>
-    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="https://restimgs-magna.s3.me-south-1.amazonaws.com/stores/589/imgs/589_logo.jpg?v=89"
+      type="image/icon type"
+    />
+    <title>Franks a Lot</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-  <body>
-    <header>
+  <body class="allBody">
+    <!-- Nav Start -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top bg-light"
+      aria-label="Ninth navbar example"
+    >
+      <div class="container">
+        <h1>
+          <a class="navbar-brand" href="/">
+            <img
+              src="https://restimgs-magna.s3.me-south-1.amazonaws.com/stores/589/imgs/589_logo.jpg?v=89"
+              alt="image not found"
+              width="100"
+              height="50"
+          /></a>
+        </h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarsExample07XL"
+          aria-controls="navbarsExample07XL"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample07XL">
+          <ul style="padding-top: 20px; margin-left: 20px" class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <h6><a class="nav-link" href="/">Home</a></h6>
+            </li>
+            <li class="nav-item">
+              <h6><a class="nav-link" href="/menu.html">Menu</a></h6>
+            </li>
+            <li class="nav-item">
+              <h6><a class="nav-link active" href="/aboutUs.html">About Us</a></h6>
+            </li>
+            <li class="nav-item">
+              <h6><a class="nav-link" href="/contactUs.html">Contact Us</a></h6>
+            </li>
+          </ul>
+          <a href="./cart.html" class="cart-container pointer">
+            <div class="cart-icon add-to-cart"></div>
+            <span id="itemCount" class="cart-badge itemsInCart"> 0 </span>
+          </a>
+        </div>
+      </div>
+    </nav>
+    <!-- Nav End -->
+
+    <br />
+
+    <div class="container text-white mt5rem pb10rem">
       <h1>About Us</h1>
-    </header>
 
-    <main>
-      <section>
-        <h2>Our Story</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consectetur leo non
-          mauris tincidunt, a gravida neque condimentum. In non vestibulum orci. Nulla ultricies
-          tempus feugiat. Nunc rhoncus tincidunt ligula in consequat.
-        </p>
-      </section>
+      <p>Welcome to Franks a Lot, where we serve up delicious hot dogs with a lot of flavor!</p>
 
-      <section>
-        <h2>Our Team</h2>
-        <ul>
-          <li>John Doe - CEO</li>
-          <li>Jane Smith - COO</li>
-          <li>Mike Johnson - CTO</li>
-        </ul>
-      </section>
-    </main>
+      <h2>Our Story</h2>
 
-    <footer>
-      <p>&copy; 2023 Company Name. All rights reserved.</p>
-    </footer>
+      <p>
+        Franks a Lot started with a passion for hot dogs and a dream to create a place where people
+        can enjoy tasty and unique flavors. Our journey began in the bustling city streets, where we
+        experimented with different combinations of high-quality ingredients and signature sauces.
+        We wanted to bring something new to the table, and that's how Franks a Lot was born.
+      </p>
+
+      <p>
+        Since our humble beginnings, we have dedicated ourselves to delivering exceptional hot dog
+        experiences to our valued customers. Our menu features a variety of delicious options, from
+        classic favorites to inventive creations that push the boundaries of traditional hot dogs.
+      </p>
+
+      <h2>Our Philosophy</h2>
+
+      <p>
+        At Franks a Lot, we believe that a great hot dog goes beyond just the taste. It's about the
+        entire experience. That's why we source the finest ingredients, ensuring that every bite is
+        a burst of flavor. We pay attention to every detail, from the softness of the bun to the
+        perfect balance of toppings.
+      </p>
+
+      <p>
+        Customer satisfaction is at the heart of everything we do. We strive to provide friendly and
+        attentive service, creating a welcoming atmosphere for everyone who walks through our doors.
+        Whether you're grabbing a quick bite during lunch or enjoying a leisurely meal with friends
+        and family, we want your visit to Franks a Lot to be a memorable one.
+      </p>
+
+      <h2>Visit Us</h2>
+
+      <p>
+        We invite you to come and experience the joy of Franks a Lot. Visit our restaurant today and
+        treat yourself to a hot dog like no other. Our friendly staff is ready to serve you with a
+        smile and help you choose the perfect combination of flavors to satisfy your cravings.
+      </p>
+
+      <p>
+        Thank you for choosing Franks a Lot. We appreciate your support and look forward to serving
+        you!
+      </p>
+    </div>
   </body>
+  <script src="./js/index.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"
+  ></script>
 </html>
