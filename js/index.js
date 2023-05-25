@@ -144,7 +144,7 @@ const showDataToPage = () => {
     let tempElement = ""
 
     for (let index = 0; index < allRecipes.length; index++) {
-        element = `<h4 id="${allRecipes[index].item}" class="mt-4 text-white">${allRecipes[index].item}</h4>
+        element = `<h4 id="${allRecipes[index].item}" class="mt-4 text-white fontSize40">${allRecipes[index].item}</h4>
         <br />
         `
         // debugger

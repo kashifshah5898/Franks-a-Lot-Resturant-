@@ -4,7 +4,7 @@
 }
 
 .allBody {
-  background-color: #5c1104;
+  background-color: orange;
 }
 
 .text-white {
@@ -178,4 +178,8 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #555;
+}
+
+.fontSize40 {
+  font-size: 40px;
 }
