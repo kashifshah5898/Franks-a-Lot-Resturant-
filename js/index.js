@@ -9,66 +9,56 @@ const allRecipes = [
         "item": "Special Offers",
         "data": [{
             "id": "Special1",
-            "link": "https://source.unsplash.com/400x305/?Soup",
+            "link": "../assets/images/Enchilada Soup.jpg",
             "itemTitle": "Soup",
             "cardText": "Homemade creamy soup with your choice of fillings",
             "price": "BHD 2.992"
         },
         {
             "id": "Special2",
-            "link": "https://source.unsplash.com/400x305/?Sandwich",
+            "link": "../assets/images/beef fajita sandwich jpg.jpg",
             "itemTitle": "Sandwich",
             "cardText": "4 oz fajita chicken or beef grilled and sandwiched in hoagie bread with onions, bell peppers, cheese, lettuce and tomato. Served with fries & coleslaw",
             "price": "BHD 2.992"
         },
         {
             "id": "Special3",
-            "link": "https://source.unsplash.com/400x305/?Coffee",
-            "itemTitle": "Coffee",
-            "cardText": "Indulge in the rich and aromatic coffee from our restaurant. Our carefully selected beans are expertly brewed to perfection, delivering a velvety-smooth texture and a well-balanced flavor profile. Whether you're craving a classic espresso or a creamy latte, our coffee will satisfy your taste buds and leave you craving for more.",
-            "price": "BHD 1.02"
-        },
-        {
-            "id": "Special4",
-            "link": "https://source.unsplash.com/400x305/?Pasta",
+            "link": "../assets/images/platters-for the slide.jpg",
             "itemTitle": "Pasta",
             "cardText": "2 crispy flour tortillas filled with choice of meat, cheddar cheese, lettuce, tomatoes. served with fries, salsa. sour cream, pico-de-gallo and guacamole", "price": "BHD 2.992"
-        }, {
-            "id": "Special5",
-            "link": "https://source.unsplash.com/400x305/?Noodles", "itemTitle": "Noodles", "cardText": "Savor the delectable noodles from our restaurant that will transport you to the streets of Asia. Each bite is a harmonious blend of flavors and textures, with our noodles cooked to perfection. From traditional favorites to innovative creations, our noodle dishes offer a delightful culinary adventure that will leave you wanting to slurp every last strand.", "price": "BHD 2.992"
         },
         ]
     }, {
         "item": "APPETIZERS",
         "data": [{
             "id": "APPETIZERS1",
-            "link": "https://source.unsplash.com/400x305/?Platter",
+            "link": "../assets/images/fiesta platter.jpg",
             "itemTitle": "Franks Fiest Platter",
             "cardText": "Experience the ultimate feast with our tantalizing platter at our restaurant. Bursting with a variety of flavors and textures, our platter showcases a selection of delectable dishes that cater to every palate. From succulent meats to fresh seafood and flavorful sides, our platter is a culinary delight that will leave you satisfied and craving for more.",
             "price": "BHD 2.992"
         },
         {
             "id": "APPETIZERS2",
-            "link": "https://source.unsplash.com/400x305/?Chips",
+            "link": "../assets/images/Cheesy Pesto Burrito-1.jpg",
             "itemTitle": "Corn Tortilla Chips With Salsa",
             "cardText": "Treat your taste buds to a burst of flavor with our irresistible chips and salsa at our restaurant. Our freshly made crispy chips perfectly complement the zesty and tangy salsa, creating a tantalizing combination. Each bite delivers a delightful crunch and a savory kick, making it a must-have appetizer for every meal.",
             "price": "BHD 2.992"
         },
         {
             "id": "APPETIZERS3",
-            "link": "https://source.unsplash.com/400x305/?Cheese",
+            "link": "../assets/images/cheese fries.jpg",
             "itemTitle": "Cheese fries",
             "cardText": "Indulge in the ultimate comfort food experience with our mouthwatering cheese fries at our restaurant. Crispy golden fries smothered in a generous layer of melted cheese create a heavenly combination that will satisfy your cravings. Each bite offers a perfect harmony of savory, cheesy goodness that will leave you wanting more.",
             "price": "BHD 1.02"
         },
         {
             "id": "APPETIZERS4",
-            "link": "https://source.unsplash.com/400x305/?Chicken",
+            "link": "../assets/images/chicken fingers.png",
             "itemTitle": "Chicken Fingers",
             "cardText": "Savor the juicy and flavorful chicken fingers from our restaurant. Made with premium cuts of chicken, each finger is carefully seasoned, breaded, and cooked to perfection. With a crispy exterior and tender, moist interior, our chicken fingers are a delightful treat that will satisfy your cravings for delicious, handheld comfort food.", "price": "BHD 2.992"
         }, {
             "id": "APPETIZERS5",
-            "link": "https://source.unsplash.com/400x305/?Bbq",
+            "link": "../assets/images/bbq.jfif",
             "itemTitle": "BBQ",
             "cardText": "Experience the tantalizing flavors of BBQ at our restaurant. Our skilled chefs meticulously prepare and slow-cook the finest meats, infusing them with a mouthwatering blend of smoky and savory BBQ goodness. From tender ribs to succulent pulled pork, each bite is a savory delight that will transport your taste buds to BBQ bliss.", "price": "BHD 2.992"
         },
@@ -77,14 +67,14 @@ const allRecipes = [
         "item": "SOUPS",
         "data": [{
             "id": "SOUPS1",
-            "link": "https://source.unsplash.com/400x305/?Soup",
+            "link": "../assets/images/cream mushroom soup.jpg",
             "itemTitle": "Creamy Mushroom Soup",
             "cardText": "Indulge in the creamy and comforting delight of our mushroom soup at our restaurant. Made with the finest mushrooms and a velvety base, each spoonful is a burst of earthy flavors and creamy goodness. This soul-warming soup is the perfect appetizer to savor and will leave you craving for more with every spoonful.",
             "price": "BHD 2.992"
         },
         {
             "id": "SOUPS2",
-            "link": "https://source.unsplash.com/400x305/?Sandwich",
+            "link": "../assets/images/Enchilada Soup.jpg",
             "itemTitle": "Enchilada Soup",
             "cardText": "Experience the vibrant and flavorful enchilada soup at our restaurant. This tantalizing soup combines the richness of tomato broth with the perfect blend of spices, tender chicken, and hearty vegetables. Topped with cheese and crispy tortilla strips, each spoonful offers a delicious burst of Mexican-inspired flavors that will leave you craving for more.",
             "price": "BHD 2.992"
@@ -94,14 +84,14 @@ const allRecipes = [
         "item": "SALADS",
         "data": [{
             "id": "SALADS1",
-            "link": "https://source.unsplash.com/400x305/?Salad",
+            "link": "../assets/images/tacos.jpg",
             "itemTitle": "Taco Salads",
             "cardText": "Introducing our mouthwatering taco salad, a culinary delight that combines the best of Tex-Mex flavors in one vibrant dish. Crisp lettuce, seasoned ground beef, zesty salsa, creamy guacamole, and a sprinkle of cheddar cheese dance together, offering a tantalizing explosion of taste with every bite. Experience taco bliss at our restaurant today!",
             "price": "BHD 2.992"
         },
         {
             "id": "SALADS2",
-            "link": "https://source.unsplash.com/400x305/?Avocado",
+            "link": "../assets/images/shrimp Avocado Salad1.jpg",
             "itemTitle": "Shrimp & Avacado Salad",
             "cardText": "Indulge in the exquisite flavors of our shrimp and avocado salad, a perfect blend of freshness and decadence. Succulent shrimp, ripe avocado slices, crisp mixed greens, and a tangy citrus dressing create a symphony of tastes that will leave your palate craving for more. Dive into this delightful culinary masterpiece at our restaurant.",
             "price": "BHD 2.992"
@@ -111,7 +101,7 @@ const allRecipes = [
         "item": "STEAK BURRITO",
         "data": [{
             "id": "STEAK1",
-            "link": "https://source.unsplash.com/400x305/?Steak",
+            "link": "../assets/images/beef steak- for the slide.jpg",
             "itemTitle": "Steak Burrito",
             "cardText": "Savor the rich and savory delight of our steak burrito, a true carnivore's dream come true. Tender, juicy steak grilled to perfection, wrapped in a warm flour tortilla along with flavorful rice, beans, cheese, and a medley of fresh toppings. Prepare for a burst of bold flavors that will leave you fully satisfied. Experience burrito bliss at our restaurant today!",
             "price": "BHD 2.992"
@@ -196,7 +186,7 @@ const search = () => {
             for (let itemData of item.data) {
                 if (itemData.itemTitle.toLowerCase() === insertedValue) {
                     return showingData.innerHTML = `
-    <div div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2" >
+    <div class="card col-lg-4 col-sm-12 col-md-12 ps-4 mt-2 pt-2" >
                         <img
                             class="card-img-top "
                             src="${itemData.link}"

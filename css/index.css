@@ -273,3 +273,7 @@ button[type="submit"]:hover {
   display: flex;
   justify-content: flex-end;
 }
+
+.slidePicture {
+  height: 500px;
+}
