@@ -183,3 +183,87 @@ button[type="submit"]:hover {
 .fontSize40 {
   font-size: 40px;
 }
+.fontSize20 {
+  font-size: 20px;
+}
+
+.checkOutBtn {
+  border-radius: 5px;
+  padding: 4px;
+  background: lightslategray;
+  color: white;
+}
+
+.cardAboutUs {
+  background-image: url("../assets/images/about-us.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 40rem !important;
+}
+.cardSuBodyAboutUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.cardBodyAboutUs {
+  padding-top: 15rem !important;
+}
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value (0.5) to change the opacity */
+}
+.cardBodyDiv {
+  margin-left: 20%;
+  width: 65%;
+}
+
+.mainCard {
+  background-color: black !important;
+  height: 13rem !important;
+}
+.card1 {
+  background-image: url("../assets/images/1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 13rem !important;
+}
+.card2 {
+  background-image: url("../assets/images/2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 13rem !important;
+}
+.card3 {
+  background-image: url("../assets/images/3.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 13rem !important;
+}
+.card4 {
+  background-image: url("../assets/images/4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 13rem !important;
+}
+
+.fullCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mt2rem {
+  margin-top: 2rem;
+}
+
+.aboutUsCardDesc {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}

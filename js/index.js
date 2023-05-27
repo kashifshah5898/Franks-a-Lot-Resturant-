@@ -122,10 +122,11 @@ const allRecipes = [
 
 const countItems = () => {
     let itemInCart = getItemsInCart()
+
     if (itemInCart) {
-        const itemLength = itemInCart.split(',').length
+        const itemLength = JSON.parse(itemInCart).length
         var itemCountElement = document.getElementById("itemCount");
-        itemCountElement.textContent = itemLength - 1;
+        itemCountElement.textContent = itemLength;
     } else {
         localStorage.setItem("itemInCart", '[]')
         var itemCountElement = document.getElementById("itemCount");
@@ -236,6 +237,8 @@ const addToCart = (id) => {
 
 const showItemsInCart = () => {
     let showingData = document.getElementById("cartItemsClass");
+    let totalBalance = document.getElementById("totalBalance");
+    totalBalance.innerHTML = 0;
     showingData.innerHTML = "";
     let updatedHtmlData = ""
 
@@ -243,6 +246,7 @@ const showItemsInCart = () => {
     let element = ""
     let element1 = ""
     let tempElement = ""
+    let checkOutBalance = 0
 
 
     let itemFromCart = getItemsInCart()
@@ -271,7 +275,7 @@ const showItemsInCart = () => {
                             </div >
                         </div >
                 `
-
+                checkOutBalance += parseFloat(allRecipes[item].data[innerArray].price.split(" ")[1]) * parseFloat(countOccurrences(itemFromCart, allRecipes[item].data[innerArray].id))
                 element1 += tempElement;
                 tempElement = ""
             }
@@ -281,6 +285,8 @@ const showItemsInCart = () => {
         element1 = ""
 
     }
+
+    totalBalance.innerHTML = checkOutBalance
 
     showingData.innerHTML = updatedHtmlData ? updatedHtmlData : `<h1 class="text-white center">No Item Found </h1>`
 }
